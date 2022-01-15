@@ -1,313 +1,691 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header{
+
+header {
     /* background-color: aquamarine; */
-    background-color:  #fdac3341;
+    background-color: #fdac3341;
 
     width: 100%;
     height: 150px;
 }
+
 /* body{
     background-color:  #f7f7f7; */
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
-   
+
 }
-h2{
+
+h2 {
     margin-left: 120px;
     margin-top: 70px;
-    font-family:   sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
 }
-.spn1{
-    color:rgb(255, 118, 6) ;
+
+.spn1 {
+    color: rgb(255, 118, 6);
 }
-nav ul{
+
+nav ul {
     list-style: none;
     display: flex;
     margin-right: 120px;
     margin-top: 80px;
 }
-nav ul li{
+
+nav ul li {
     margin-right: 20px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     padding: 9px 18px;
     color: black;
     font-size: 18px;
     font-weight: 650px;
 }
-.fa-search{
+
+nav ul li a:hover {
+    color: rgb(255, 118, 6);
+    transition: .6s;
+}
+
+.fa-search {
     margin-right: 20px;
     font-size: 22px;
     color: rgb(255, 118, 6);
-    
+
 }
-.fa-shopping-cart{
+
+.fa-shopping-cart {
     font-size: 22px;
     color: rgb(255, 118, 6);
 }
+
 /*..................................
            section -1 all css value
  ........................................................... */
- .top-section{
-     width: 100%;
-     height: 600px;
-     display: flex;
-     justify-content: space-around;
-     background-color: white;
-     padding-top: 40px;
- }
- .top-heading{
-     width: 580px;
-     height: 280px; 
-     margin-left: 120px;
-     margin-right: 133px;
-     margin-top: 85px;
- }
- .top-heading h1{
-     font-size: 52px;
-     font-weight: bold;
+.top-section {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding-top: 40px;
+}
 
- }
- .top-heading p {
+.top-heading {
+    width: 580px;
+    height: 280px;
+    margin-left: 120px;
+    margin-right: 133px;
+    margin-top: 85px;
+}
+
+.top-heading h1 {
+    font-size: 52px;
+    font-weight: bold;
+
+}
+
+.top-heading p {
     font-style: normal;
     font-weight: 500;
     margin-top: 16px;
- }
- .top-heading   button{
-     font-size: 16px;
-     padding: 10px 24px;
-     border: .5px solid ;
-     background-color: rgba(250, 124, 20, 0.918);
-     margin-top: 19px;
-     border-radius: 25px;
-    
- }
- .top-heading button a{
-     text-decoration: none;
-     color: rgb(0, 0, 0);
-     font-weight:600px;
- }
- .top-heading button:hover{
-     background-color: rgb(201, 201, 201);
-     transition: .6s;
-     
- }
- .fa-arrow-right{
-     margin-left: 7px;
+}
+
+.top-heading button {
+    font-size: 16px;
+    padding: 10px 24px;
+    border: .5px solid;
+    background-color: rgba(250, 124, 20, 0.918);
+    margin-top: 19px;
+    border-radius: 25px;
+
+}
+
+.top-heading button a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600px;
+}
+
+.top-heading button:hover {
+    background-color: rgb(201, 201, 201);
+    transition: .6s transform .1s;
+    transform: scale(1.1);
+
+}
+
+.fa-arrow-right {
+    margin-left: 7px;
     color: rgb(0, 0, 0);
     margin-top: 2px;
     font-weight: 700px;
- }
- .top-img img{
-     width: 440px;
-     height: 410px;
-     margin-right: 213px;
-    }
-     .top-img img:hover{
-         transform: scale(1.1) ;
+}
 
-         transition: transform .9s;
+.top-img img {
+    width: 440px;
+    height: 410px;
+    margin-right: 213px;
+}
 
-     }
-     
- /* ................logos all css value ........................................ */
- .logos{
-     display: flex;
-     justify-content: center;
-     width: 1110px;
-     height: 80px;
-     margin-left: 165px;
- }
- .logo{
-     margin-right: 45px;
-     padding-top: 25px;
-    
- }
- hr{
-     width: 1020px;
-     margin-left: 185px;
-     
- }
+.top-img img:hover {
+    transform: scale(1.1) rotateY(180deg);
+
+    transition: transform 3s;
+
+}
+
+/* ................logos all css value ........................................ */
+.logos {
+    display: flex;
+    justify-content: center;
+    width: 1110px;
+    height: 80px;
+    margin-left: 165px;
+}
+
+.logo {
+    margin-right: 45px;
+    padding-top: 25px;
+
+}
+
+hr {
+    width: 1020px;
+    margin-left: 185px;
+
+}
+
 /* ...................sec-2 all css value................................ */
-.sec-2{
+.sec-2 {
     width: 1060px;
     height: 1690px;
-    background-color:white;
+    background-color: white;
     margin-left: 166px;
     margin-top: 70px;
 }
-.sec-hading{
-    font-style: normal;
-font-weight: 800;
-font-size: 32px;
-text-align: center;
-margin-top: 2px;
 
-color:rgb(255, 118, 6) ;
+.sec-hading {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 2px;
+
+    color: rgb(255, 118, 6);
 }
-.collection-s{
+
+.collection-s {
     margin-top: 45px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
     grid-column-gap: 18px;
 
 }
-.collection{
+
+.collection {
     width: 329px;
-height: 476px;
+    height: 476px;
 
-box-shadow: 0 0 25px rgba(187, 187, 187, 0.76);
+    box-shadow: 0 0 25px rgba(187, 187, 187, 0.76);
 
 
-align-items: center;
+    align-items: center;
 }
-.collection:hover{
+
+.collection:hover {
     transform: scale(1.03);
     transition: transform .6s;
 }
-.collection img{
+
+.collection img {
     width: 300px;
-height: 256px;
-margin-top: 20px;
-margin-left: 15px;
+    height: 256px;
+    margin-top: 20px;
+    margin-left: 15px;
 
 }
-.justify{
-    margin-top:10px;
+
+.justify {
+    margin-top: 10px;
     margin-left: 15px;
-    
+
 }
-.name{
+
+.name {
     font-size: 29px;
     color: rgb(255, 118, 6);
     font-weight: 800;
-    
+
 }
-.price{
+
+.price {
     font-size: 24px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 .fa-star {
     color: rgb(255, 199, 15);
 }
-.fa-star-half-alt{
+
+.fa-star-half-alt {
     color: rgb(255, 199, 15);
 
 }
-.ditel-p{
+
+.ditel-p {
     font-size: 16px;
     margin-top: 15px;
 }
+
 .see-more {
-    
+
     text-align: right;
     margin-right: 25px;
     margin-top: 20px;
-   
+
     font-size: 24px;
     font-weight: 800;
 }
-.see-more a{
+
+.see-more a {
     text-decoration: none;
-    color:rgb(255, 118, 6) ;
+    color: rgb(255, 118, 6);
 }
-.fa-long-arrow-alt-right{
-    color:rgb(255, 118, 6) ;
-    
+
+.fa-long-arrow-alt-right {
+    color: rgb(255, 118, 6);
+
 }
+
 /* ...........sec-3 ....all css value..................................... */
-.sec-3{width: 1110px;
-height: 410px;
-display: grid;
-grid-template-columns: repeat(2,1fr);
+.sec-3 {
+    width: 1110px;
+    height: 410px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
-margin-left: 95px;
-padding-top: 35px;
-margin-bottom: 25px;
+    margin-left: 95px;
+    padding-top: 35px;
+    margin-bottom: 25px;
+    position: relative;
 
 }
-.blog-info{
+
+.blog-info {
     margin-left: 65px;
 }
-.blog-info h4{
+
+.blog-info h4 {
     font-size: 45px;
-    
+
 }
-.blog-info p{
+
+.blog-info p {
     font-size: 24px;
     margin-top: 15px;
 }
-.blog-info   button{
+
+.blog-info button {
     font-size: 16px;
     padding: 10px 24px;
-    border: .5px solid ;
+    border: .5px solid;
     background-color: rgba(255, 118, 6, 0.801);
     margin-top: 19px;
     border-radius: 25px;
-   
+
 }
-.blog-info button a{
+
+.blog-info button:hover {
+    background-color: rgb(197, 196, 196);
+    transition: .6s;
+}
+
+.blog-info button a {
     text-decoration: none;
     color: rgb(15, 15, 15);
-    font-weight:900px;}
+    font-weight: 900px;
+}
 
-.info-img{
+.info-img {
     text-align: center;
     margin-left: 80px;
 }
-.info-img:hover{
-    transform: scale(1.09) ;
+
+.info-img:hover {
+    transform: scale(1.09);
     transition: transform .7s;
 }
 
 
-.info-img img{
+.info-img img {
     height: 300px;
     width: 100%;
     border: 8px solid rgba(255, 121, 11, 0.808);
     border-radius: 60px 0px 60px 0px;
 }
- 
+
 
 /* ..............................footer................................. */
-footer{
+footer {
     width: 100%;
     height: 180px;
     margin-top: 20px;
-    background-color:#fdac338e ;
+    background-color: #fdac338e;
+
+
 }
-.last-div{
+
+.last-div {
     text-align: center;
     font-weight: 800;
     padding-top: 25px;
 }
 
 
-.footer-hading{
-    font-size: 30px;}
-    .social{
-        font-size: 28px;
-        margin-top: 15px;
-        
-        padding: 5px;
-        
-    }
-    .social a{
-        color: black;
+.footer-hading {
+    font-size: 30px;
+}
+
+.social {
+    font-size: 28px;
+    margin-top: 15px;
+
+    padding: 5px;
+
+}
+
+.social a {
+    color: black;
+}
+
+.social i {
+    margin-right: 5px;
+}
+
+
+/* .......for 770px...................................................... */
+@media only screen and (max-width:788px) {
+    nav ul {
+        display: none;
     }
 
-    .social i{
-        margin-right: 5px;
+    body {
+        height: 100vh;
     }
+
+    h2 {
+        margin-left: 50px;
+        margin-top: 70px;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .top-section {
+        display: block;
+        align-items: center;
+    }
+
+    .top-heading {
+        width: 100%;
+        height: 280px;
+        margin-left: 0px;
+        padding: 15px;
+        align-items: center;
+
+        margin-top: 25px;
+    }
+
+    .top-heading h1 {
+        font-size: 32px;
+        font-weight: bold;
+
+
+
+
+    }
+
+    .top-img {
+        text-align: center;
+        align-items: center;
+    }
+
+    .top-img img {
+        width: 340px;
+        height: 210px;
+        margin-left: 16px;
+
+
+    }
+
+    .logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        height: auto;
+        width: 100%;
+
+        margin-left: 25px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 20px;
+    }
+
+    .logo {
+        margin-right: 15px;
+        padding-top: 45px;
+        padding-left: 60px;
+        margin-left: 20px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .sec-2 {
+        width: 307px;
+        width: 100%;
+        background-color: white;
+        margin-left: 16px;
+        margin-top: 20px;
+    }
+
+    .sec-hading {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 22px;
+        text-align: center;
+        margin-top: 2px;
+        margin-left: 50px;
+
+        color: rgb(255, 118, 6);
+    }
+
+    .see-more {
+
+        text-align: right;
+    }
+
+    .collection-s {
+        margin-top: 45px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+
+
+    }
+
+    .collection {
+        width: 229px;
+        height: 376px;
+
+        box-shadow: 0 0 25px rgba(187, 187, 187, 0.76);
+
+
+        align-items: center;
+    }
+
+    .collection img {
+        width: 200px;
+        height: 156px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    .sec-3 {
+        width: 100%;
+        height: 910px;
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 5px;
+        padding-top: 35px;
+        margin-bottom: 25px;
+
+    }
+
+    .info-img img {
+        height: 200px;
+        width: 80%;
+        border: 8px solid rgba(255, 121, 11, 0.808);
+        border-radius: 60px 0px 60px 0px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* ...............media quyeri....488px............................. */
+@media only screen and (max-width:488px) {
+    nav ul {
+        display: none;
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    h2 {
+        margin-left: 20px;
+        margin-top: 70px;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .top-section {
+        display: block;
+    }
+
+    .top-heading {
+        width: 80%;
+        height: 280px;
+        margin-left: 0px;
+        padding: 15px;
+
+        margin-top: 25px;
+    }
+
+    .top-heading h1 {
+        font-size: 32px;
+        font-weight: bold;
+
+
+
+
+    }
+
+    .top-img img {
+        width: 240px;
+        height: 210px;
+        margin-left: 10px;
+
+    }
+
+    .logos {
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        height: auto;
+        width: 100%;
+
+        margin-left: 5px;
+    }
+
+    .logo img {
+        width: 30px;
+        height: 10px;
+    }
+
+    .logo {
+        width: 40px;
+
+        padding-top: 25px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .sec-2 {
+        width: 100%;
+
+        background-color: white;
+        margin-left: 6px;
+        margin-top: 20px;
+    }
+
+    .sec-hading {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 22px;
+        text-align: center;
+        margin-top: 2px;
+
+
+        color: rgb(255, 118, 6);
+    }
+
+    .see-more {
+
+        text-align: right;
+    }
+
+    .collection-s {
+        width: 100%;
+        margin-top: 45px;
+
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+
+    }
+
+    .sec-3 {
+        width: 100%;
+        height: 810px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        margin-left: 15px;
+        padding-top: 35px;
+        margin-bottom: 25px;
+
+
+    }
+
+    .blog-info {
+        margin-left: 5px;
+    }
+
+    .info-img img {
+        height: 300px;
+        width: 100%;
+        border: 8px solid rgba(255, 121, 11, 0.808);
+        border-radius: 60px 0px 60px 0px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
